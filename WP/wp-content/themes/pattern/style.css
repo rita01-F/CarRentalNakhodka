@@ -1,0 +1,423 @@
+/*
+Theme Name: MyPattern
+Author: RitaF
+Description: My pattern 
+Version: 2019.2
+*/
+
+@font-face {
+	font-family: "Montserrat-400";
+	src: url(/wp-content/themes/pattern/fonts/Montserrat-400.ttf);
+}
+@font-face {
+	font-family: "Montserrat-500";
+	src: url(/wp-content/themes/pattern/fonts/Montserrat-500.ttf);
+}
+@font-face {
+	font-family: "Montserrat-600";
+	src: url(/wp-content/themes/pattern/fonts/Montserrat-600.ttf);
+}
+@font-face {
+	font-family: "Montserrat-900";
+	src: url(/wp-content/themes/pattern/fonts/Montserrat-900.ttf);
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}textarea,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="search"],input[type="password"]{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}th,td{padding:2px}big{font-size:120%}small,sup,sub{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,strike,s{text-decoration:line-through}dt{font-weight:bold}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+body {
+	background-color: black;
+	font-family: 'Montserrat-400';
+	color: white;
+	overflow-x:hidden; 
+​​​}
+
+a {
+	text-decoration: none;	
+}
+
+#header {
+	width: 100%;
+}
+
+#header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1170px;
+	margin: auto;
+}
+
+#header .logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header .logo .text .name {
+	font-family: 'Montserrat-500';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 121.69%;
+	color: #FCCD01;
+	margin-left: 6px;
+}
+
+#header .logo .text .direction {
+	font-family: "Montserrat-500";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 121.69%;
+	color: #FFFFFF;
+	margin-left: 6px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contact{
+	margin: 15px 0px;
+}
+.menu li {
+	margin-right: 60px;
+}
+
+.menu li:last-child {
+	margin-right: 0px;
+}
+
+.menu a {
+	color: white;
+}
+
+ #header .phone {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	line-height: 150%;
+ }
+#header .image-phone {
+ 	margin-right: 6px;
+ }
+ #footer{
+ 	background-color: #FCCD01;
+ 	color: black;
+ }
+
+ #footer a {
+  	color: black;
+ }
+
+ #footer .left-foot{
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ #footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1170px;
+	height: 120px;
+	margin: auto;
+}
+
+#footer-container span {
+	margin-left: 10px;
+}
+
+#footer-container .up {
+	display: flex;
+ 	align-items: center;
+	margin-right: 10px;
+}
+
+#footer-container p {
+	margin-right: 10px;
+}
+.entry-content {
+	max-width: 1170px;
+	margin:  auto;
+}
+/* ГЛАВНАЯ СТРАНИЦА */
+.background {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+.background img {
+	width: 100%;
+	margin: auto;
+}
+.background .text {
+	position: absolute;
+	top: calc(50% - 360px / 2);
+	max-width: 1170px;
+	left: calc(50% - 1170px / 2)
+}
+.background .text1 {
+	font-family: "Montserrat-900";
+	font-size: 64px;
+	width: 790px;
+	line-height: 121.69%; 
+
+}
+.background .text .text2 {
+	font-family: "Montserrat-500";
+	font-size: 22px;
+	line-height: 160%;
+	color: #FFFFFFB2;
+	margin-top: 60px;
+	margin-bottom: 80px;
+	
+}
+
+.background .text .button a {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+	color: #050505;
+}
+
+.background .text .button{
+	width: 226px;
+	height: 68px;
+	background: #FCCD01;
+	border-radius: 50px;
+}
+
+.header-catalog{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 32px;
+	margin-bottom: 30px;
+	margin-top: 90px;
+}
+
+.header-catalog .view-all{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+
+}
+.header-catalog .view-all .text{
+	margin-right: 11px;
+}
+.header-catalog .name{
+	border-left: 3px solid #FCCD01;
+	padding-left: 10px;
+}
+.cars{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+}
+.cars .name-car {
+	font-family: "Montserrat-600";
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.cars .about-car {
+	font-family: "Montserrat-400";
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 36px;
+}
+.cars .button a {
+	font-family: "Montserrat-500";
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	color: #050505;
+}
+
+.cars .button{
+	width: 207px;
+	height: 58px;
+	background: #FCCD01;
+	border-radius: 34px;
+	margin-bottom: 90px;
+}
+.header-documents{
+	font-family: "Montserrat-600";
+	font-size: 32px;
+	border-left: 3px solid #FCCD01;
+	padding-left: 10px;
+	margin-bottom: 50px;
+}
+.item-box .top-items{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: "Montserrat-400";
+	font-size: 22px;	
+}
+.item-box .bottom-items{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	font-family: "Montserrat-400";
+	font-size: 22px;
+	margin-bottom: 125px;
+}
+.top-items .age{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 290px;
+	line-height: 150%;
+}
+.top-items .key{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 340px;
+	line-height: 150%;
+}
+
+.top-items .passport{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 340px;
+	line-height: 150%;
+}
+
+.bottom-items .rudder{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 340px;
+	line-height: 150%;
+}
+.bottom-items .money{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 370px;
+	line-height: 150%;
+}
+
+.bottom-items .id-card{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 340px;
+	line-height: 150%;
+}
+.bottom-items img{
+	margin-right: 30px;
+}
+.third-slide{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.CarPhoto{
+	padding-right: -70%;
+}
+.header-form{
+	font-family: "Montserrat-600";
+	font-size: 32px;
+	border-left: 3px solid #FCCD01;
+	padding-left: 10px;
+	margin-bottom: 35px;
+}
+.text-after{
+	font-family: "Montserrat-400";
+	margin-bottom: 35px;
+}
+.form input{
+	font-family: "Montserrat-400";
+	padding-left: 32px;
+	background: #1D1D1D;
+	border-radius: 50px;
+	width: 476px;
+	height: 59px;
+	margin-bottom: 35px;
+	border:none;
+}
+.form-input{
+	display: flex;
+	flex-wrap: wrap;
+  	align-content: space-between;
+  	width: 70%;
+}
+.form .button{
+	width: 245px;
+	height: 55px;
+	background: #FCCD01;
+	border-radius: 34px;
+	margin-bottom: 90px;
+	margin-right: 10px;
+}
+
+.form .button a {
+	font-family: "Montserrat-500";
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	color: #050505;
+}
+.button-checkbox{
+	display: flex; 
+	align-items: center;	
+}
+.container {
+	display: flex;  
+	align-items: center;	
+}
+.container input {
+      height: 23px;
+    width: 23px;
+    background-color: #eec321;
+}
+.container p{
+	font-family: "Montserrat-400";
+	font-size: 10px;
+	line-height: 150%;
+}
+
+/* КАТАЛОГ */
+.auto{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 90px;
+}
+.fourth-slide{
+	margin-bottom: 125px;
+}
+.container-contact{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 125px;
+}
+.header-contacts{
+	font-family: "Montserrat-600";
+	font-size: 32px;
+	border-left: 3px solid #FCCD01;
+	padding-left: 10px;
+	margin-bottom: 35px;
+}
+.contacts{
+	width: 170px;
+}
+
