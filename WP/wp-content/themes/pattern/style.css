@@ -420,4 +420,6 @@ a {
 .contacts{
 	width: 170px;
 }
+/*Календарь*/
 
+@import url("//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css");

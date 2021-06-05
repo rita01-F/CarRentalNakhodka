@@ -45,16 +45,16 @@ function getStatus(select, id)
     }
 
     $.ajax({
-        url: 'admin_panel.php',
+        url: '/admin-panel/',
         type: 'POST',
         dataType: 'text',
         data:
             {
-                status: status,
+                new_status: status,
                 id: id
             },
         success (data) {
-            console.log(data);
+            //console.log(data);
         }
     });
 }

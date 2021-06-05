@@ -11,9 +11,16 @@ if ( ! isset( $content_width ) ) { $content_width = 1920; }
 register_nav_menus( array( 'main-menu' => esc_html__( 'Main Menu', 'blankslate' ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
+add_action( 'wp_enqueue_scripts', 'register_style' );
 function blankslate_load_scripts() {
 wp_enqueue_style( 'blankslate-style', get_stylesheet_uri() );
 wp_enqueue_script( 'jquery' );
+wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js' );
+wp_enqueue_script( 'datarangepicker', get_template_directory_uri() . '/scripts/datarangepicker.js' );
+}
+function register_style() {
+	wp_register_style( 'datarangepicker', '//cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css' );
+	wp_enqueue_style( 'datarangepicker' );
 }
 add_action( 'wp_footer', 'blankslate_footer_scripts' );
 function blankslate_footer_scripts() {
