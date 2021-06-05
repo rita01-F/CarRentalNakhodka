@@ -7,9 +7,9 @@
 <?php
 	require (dirname(__DIR__).'/includes/db.php');
 
-    $cars = R::find('cars');
+    $cars = R::find($wpdb->base_prefix.'cars');
 
-    $reserves = R::find('reserve');
+    $reserves = R::find($wpdb->base_prefix.'reserve');
 ?>
 <?php get_header(); ?>
 <main id="content">

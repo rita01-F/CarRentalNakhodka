@@ -1,7 +1,11 @@
 <?php
 
     require (dirname(__DIR__).'\includes\rb-mysql.php');
-    R::setup('mysql:host=localhost; dbname=test', 'root', 'root');
+
+	global $wpdb;
+	$charset_collate = $wpdb->get_charset_collate();
+
+    R::setup('mysql:host=localhost; dbname=wpfolder', 'root', 'root');
 
     session_start();
 
